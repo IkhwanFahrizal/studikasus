@@ -11,26 +11,19 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Toko Laptop</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/filecss.css">
 	<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
-	<script src="https://cdn.ckeditor.com/4.14.0/standard/ckeditor.js"></script>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 </head>
 
 <body>
 	<header>
-		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-			<div class="container" class="collapse navbar-collapse" id="navbarNav">
-				<h1><a href="dashboard.php"></a></h1>
-				<ul>
-					<li><a href="dashboard.php">Dashboard</a></li>
-					<li><a href="profil.php">Profil</a></li>
-					<li><a href="data-kategori.php">Data Kategori</a></li>
-					<li><a href="data-produk.php">Data Produk</a></li>
-					<li><a href="keluar.php">Keluar</a></li>
-				</ul>
-			</div>
-		</nav>
+		<div class="container"> 
+			<h1><a href="#">Tambah Data Produk</a></h1>
+			<ul>
+				<a href="data-produk.php" class="back-button">Kembali</a>
+			</ul>
+		</div>
 	</header>
 
 	<div class="section">
@@ -57,7 +50,7 @@
 						<option value="1">Aktif</option>
 						<option value="0">Tidak Aktif</option>
 					</select>
-					<input type="submit" name="submit" value="Submit" class="btn">
+					<input type="submit" name="submit" value="Submit" class="btn btn-secondary">
 				</form>
 				<?php 
 					if(isset($_POST['submit'])){
