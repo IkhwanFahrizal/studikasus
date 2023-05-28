@@ -11,6 +11,9 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Bukawarung</title>
+	<script src="https://code.jquery.com/jquery-3.6.2.min.js" integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.css" />
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/filecss.css">
 	<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
@@ -36,8 +39,8 @@
 		<div class="container">
 			<h3>Data Produk</h3>
 			<div class="box">
-				<p><a href="tambah-produk.php">Tambah Data</a></p>
-				<table border="1" cellspacing="0" class="table">
+				<p><a href="tambah-produk.php" class="btn btn-secondary mb-3">Tambah Data</a></p>
+				<table id="myTable" class="display" border="1" cellspacing="0" class="table">
 					<thead>
 						<tr>
 							<th width="60px">No</th>
@@ -64,7 +67,8 @@
 							<td><a href="produk/<?php echo $row['product_image'] ?>" target="_blank"> <img src="produk/<?php echo $row['product_image'] ?>" width="50px"> </a></td>
 							<td><?php echo ($row['product_status'] == 0)? 'Tidak Aktif':'Aktif'; ?></td>
 							<td>
-								<a href="edit-produk.php?id=<?php echo $row['product_id'] ?>">Edit</a> || <a href="proses-hapus.php?idp=<?php echo $row['product_id'] ?>" onclick="return confirm('Yakin ingin hapus ?')">Hapus</a>
+								<a class="btn btn-secondary mb-3" href="edit-produk.php?id=<?php echo $row['product_id'] ?>">Edit</a> 
+								<a class="btn btn-secondary mb-3" href="proses-hapus.php?idp=<?php echo $row['product_id'] ?>" onclick="return confirm('Yakin ingin hapus ?')">Hapus</a>
 							</td>
 						</tr>
 						<?php }}else{ ?>
@@ -83,5 +87,10 @@
 			<small>Copyright &copy; Toko Laptop</small>
 		</div>
 	</footer>
+	<script type="text/javascript">
+        $(document).ready( function () {
+                $('#myTable').DataTable();
+        } );
+	</script>
 </body>
 </html>

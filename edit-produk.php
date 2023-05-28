@@ -16,7 +16,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Bukawarung</title>
+	<title>Toko Laptop</title>
 	<link rel="stylesheet" type="text/css" href="css/filecss.css">
 	<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
 	<script src="https://cdn.ckeditor.com/4.14.0/standard/ckeditor.js"></script>
@@ -26,13 +26,9 @@
 <body>
 	<header>
 		<div class="container">
-			<h1><a href="dashboard.php">Bukawarung</a></h1>
+			<h1><a href="#">Edit Data Produk</a></h1>
 			<ul>
-				<li><a href="dashboard.php">Dashboard</a></li>
-				<li><a href="profil.php">Profil</a></li>
-				<li><a href="data-kategori.php">Data Kategori</a></li>
-				<li><a href="data-produk.php">Data Produk</a></li>
-				<li><a href="keluar.php">Keluar</a></li>
+				<a href="data-produk.php" class="back-button">Kembali</a>
 			</ul>
 		</div>
 	</header>
@@ -64,7 +60,7 @@
 						<option value="1" <?php echo ($p->product_status == 1)? 'selected':''; ?>>Aktif</option>
 						<option value="0" <?php echo ($p->product_status == 0)? 'selected':''; ?>>Tidak Aktif</option>
 					</select>
-					<input type="submit" name="submit" value="Submit" class="btn">
+					<input type="submit" name="submit" value="Submit" class="btn btn-secondary mb-3">
 				</form>
 				<?php 
 					if(isset($_POST['submit'])){

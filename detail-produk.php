@@ -12,7 +12,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Bukawarung</title>
+	<title>Toko Laptop</title>
 	<link rel="stylesheet" type="text/css" href="css/filecss.css">
 	<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
 </head>
@@ -51,6 +51,30 @@
 
 	<div class="footer">
 		<div class="container">
+			<div class="info_logo">
+				<h2 style="text-align: center;"> <b>Tentang saya</b></h2>
+				</div>
+				<div class="row">
+				<center>
+				<div class="col-md-6">
+					<div>
+						<p>
+						Jl. Pendrikan Kidul
+						</p>
+					</div>
+					<div>
+						<p>
+						+62 81236320221
+						</p>
+					</div>
+					<div>
+						<p>
+						alfaikhwan@gmail.com
+						</p>
+					</div>
+				</div>
+				</center>
+			</div>
 			<small>Copyright &copy; Toko Laptop</small>
 		</div>
 	</div>

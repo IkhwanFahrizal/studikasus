@@ -24,18 +24,12 @@
 
 <body>
 	<header>
-		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-			<div class="container" class="collapse navbar-collapse" id="navbarNav">
-				<h1><a href="dashboard.php">Toko Laptop</a></h1>
-				<ul>
-					<li><a href="dashboard.php">Dashboard</a></li>
-					<li><a href="profil.php">Profil</a></li>
-					<li><a href="data-kategori.php">Data Kategori</a></li>
-					<li><a href="data-produk.php">Data Produk</a></li>
-					<li><a href="keluar.php">Keluar</a></li>
-				</ul>
-			</div>
-		</nav>
+		<div class="container"> 
+			<h1><a href="#">Edit Data Kategori</a></h1>
+			<ul>
+				<a href="data-produk.php" class="back-button">Kembali</a>
+			</ul>
+		</div>
 	</header>
 
 	<div class="section">
@@ -44,7 +38,7 @@
 			<div class="box">
 				<form action="" method="POST">
 					<input type="text" name="nama" placeholder="Nama Kategori" class="input-control" value="<?php echo $k->category_name ?>" required>
-					<input type="submit" name="submit" value="Submit" class="btn">
+					<input type="submit" name="submit" value="Submit" class="btn btn-secondary mb-3">
 				</form>
 				<?php 
 					if(isset($_POST['submit'])){

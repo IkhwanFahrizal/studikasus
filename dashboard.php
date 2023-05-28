@@ -45,5 +45,6 @@
 			<small>Copyright &copy; Toko Laptop</small>
 		</div>
 	</footer>
+	
 </body>
 </html>
