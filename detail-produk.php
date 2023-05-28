@@ -15,6 +15,7 @@
 	<title>Toko Laptop</title>
 	<link rel="stylesheet" type="text/css" href="css/filecss.css">
 	<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+	
 </head>
 
 <body>
