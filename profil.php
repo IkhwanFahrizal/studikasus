@@ -78,7 +78,7 @@
 				<form action="" method="POST">
 					<input type="password" name="pass1" placeholder="Password Baru" class="input-control" required>
 					<input type="password" name="pass2" placeholder="Konfirmasi Password Baru" class="input-control" required>
-					<input type="submit" name="ubah_password" value="Ubah Password" class="btn">
+					<input type="submit" name="ubah_password" value="Ubah Password" class="btn btn-secondary">
 				</form>
 				<?php 
 					if(isset($_POST['ubah_password'])){
