@@ -79,7 +79,7 @@
 					</div>
 				</div>
 				<div class="col-md-6 mb-4">
-						<img src="produk/logo.png" width="50%" align="right">
+						<img src="img/logo.png" width="50%" align="right">
 				</div>
 			</div>
 		</div>
